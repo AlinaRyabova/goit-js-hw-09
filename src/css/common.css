@@ -38,7 +38,6 @@ body {
   z-index: 10;
   display: flex;
   justify-content: center;
-  /* margin-top: 90px; */
 }
 .timer {
   position: absolute;
