@@ -22,8 +22,8 @@ function createPromise(position, delay) {
     }, delay);
   });
 }
-function onPromiseCreate(e) {
-  e.preventDefault();
+function onPromiseCreate(event) {
+  event.preventDefault();
 
   let valueDelay = Number(refs.delay.value);
   let step = Number(refs.step.value);
