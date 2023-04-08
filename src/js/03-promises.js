@@ -29,6 +29,10 @@ function onPromiseCreate(e) {
   let step = Number(refs.step.value);
   let amount = Number(refs.amount.value);
 
+  if (step < 0 || valueDelay < 0 || amount <= 0) {
+    Notify.warning('Please enter correct values for step, delay and amount!');
+    return;
+  }
   for (let i = 1; i <= amount; i += 1) {
     let promiseDelay = valueDelay + step * i;
 
